@@ -1,10 +1,4 @@
-import os
-
-
 class ProjectConfig:
-
-    target_column = "Churn Label"
-
-    random_state = 42
-
-    test_size = 0.20
+    TARGET_COLUMN = "Churn Label"
+    RANDOM_STATE = 42
+    TEST_SIZE = 0.20

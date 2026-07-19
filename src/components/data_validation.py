@@ -15,7 +15,7 @@ class DataValidation:
 
         self.config = ProjectConfig()
 
-    def validate_dataset(self, df: pd.DataFrame):
+    def validate_dataset(self,df: pd.DataFrame) -> dict:
 
         logger.info("=" * 70)
         logger.info("DATA VALIDATION STARTED")
@@ -53,7 +53,7 @@ class DataValidation:
             # ---------------------------------
 
             validation_report["Target Column Exists"] = (
-                self.config.target_column in df.columns
+                self.config.TARGET_COLUMN in df.columns
             )
 
             # ---------------------------------
@@ -87,7 +87,7 @@ class DataValidation:
                 index=False
             )
 
-            logger.info("Validation Completed Successfully.")
+            logger.info(validation_report)
 
             logger.info("=" * 70)
             logger.info("DATA VALIDATION COMPLETED")

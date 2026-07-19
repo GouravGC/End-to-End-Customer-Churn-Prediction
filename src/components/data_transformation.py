@@ -28,7 +28,7 @@ class DataTransformation:
 
         self.config = ProjectConfig()
 
-    def initiate_data_transformation(self, df):
+    def initiate_data_transformation(self,df: pd.DataFrame):
 
         logger.info("=" * 70)
         logger.info("DATA TRANSFORMATION STARTED")
@@ -36,7 +36,7 @@ class DataTransformation:
 
         try:
 
-            target_column = self.config.target_column
+            target_column = self.config.TARGET_COLUMN
 
             X = df.drop(columns=[target_column])
 
@@ -102,25 +102,36 @@ class DataTransformation:
             label_encoder = LabelEncoder()
 
             y = label_encoder.fit_transform(y)
+            logger.info("Target column encoded successfully.")
 
             X_train, X_test, y_train, y_test = train_test_split(
 
                 X,
                 y,
-                test_size=self.config.test_size,
-                random_state=self.config.random_state,
+                test_size=self.config.TEST_SIZE,
+                random_state=self.config.RANDOM_STATE,
                 stratify=y
 
+            )
+            logger.info(f"Train Shape : {X_train.shape}")
+
+            logger.info(
+                f"Test Shape : {X_test.shape}"
             )
 
             X_train_processed = preprocessor.fit_transform(
                 X_train
             )
 
+            logger.info(
+            f"Train Shape After Transformation : {X_train_processed.shape}")
+
             X_test_processed = preprocessor.transform(
                 X_test
             )
 
+            logger.info(f"Test Shape After Transformation : {X_test_processed.shape}")
+    
             save_object(
                 PREPROCESSOR_PATH,
                 preprocessor

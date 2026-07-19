@@ -2,10 +2,6 @@ import os
 import sys
 import json
 import joblib
-import pickle
-
-import pandas as pd
-import numpy as np
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import roc_auc_score
@@ -13,7 +9,7 @@ from sklearn.metrics import roc_auc_score
 from src.exception import CustomException
 from src.logger import logger
 
-def save_object(file_path, obj):
+def save_object(file_path: str, obj) -> None:
 
     try:
 
@@ -29,7 +25,7 @@ def save_object(file_path, obj):
 
         raise CustomException(e, sys)
     
-def load_object(file_path):
+def load_object(file_path: str):
 
     try:
 
@@ -43,7 +39,7 @@ def load_object(file_path):
 
         raise CustomException(e, sys)
     
-def save_json(file_path, data):
+def save_json(file_path: str, data: dict):
 
         try:
 
@@ -51,7 +47,7 @@ def save_json(file_path, data):
 
             with open(file_path, "w") as file:
 
-                json.dump(data, file, indent=4)
+                json.dump(data, file, indent=4, ensure_ascii=False)
 
             logger.info(f"JSON saved at {file_path}")
 
@@ -59,13 +55,14 @@ def save_json(file_path, data):
 
             raise CustomException(e, sys)
     
-def load_json(file_path):
+def load_json(file_path: str):
 
         try:
 
             with open(file_path, "r") as file:
 
                 data = json.load(file)
+                logger.info(f"JSON loaded from {file_path}")
 
             return data
 
@@ -73,7 +70,7 @@ def load_json(file_path):
 
             raise CustomException(e, sys)
     
-def save_dataframe(df, file_path):
+def save_dataframe(df, file_path: str) -> None:
 
         try:
 
@@ -82,6 +79,7 @@ def save_dataframe(df, file_path):
             df.to_csv(file_path, index=False)
 
             logger.info(f"DataFrame saved at {file_path}")
+            logger.info(f"DataFrame Shape : {df.shape}")
 
         except Exception as e:
 
@@ -99,7 +97,8 @@ def evaluate_models(
         try:
 
             report = {}
-
+            trained_models = {}
+            
             for model_name in models:
 
                 model = models[model_name]
@@ -131,12 +130,13 @@ def evaluate_models(
                 score = roc_auc_score(y_test, y_prob)
 
                 report[model_name] = score
+                trained_models[model_name] = model
 
                 logger.info(
                     f"{model_name} ROC AUC : {score:.4f}"
                 )
 
-            return report
+            return report, trained_models
 
         except Exception as e:
 
