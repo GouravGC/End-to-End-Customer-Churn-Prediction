@@ -1,0 +1,9 @@
+Payment Method,Churn Label,Customers
+Bank transfer (automatic),No,1286
+Bank transfer (automatic),Yes,258
+Credit card (automatic),No,1290
+Credit card (automatic),Yes,232
+Electronic check,No,1294
+Electronic check,Yes,1071
+Mailed check,No,1304
+Mailed check,Yes,308

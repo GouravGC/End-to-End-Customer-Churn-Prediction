@@ -1,0 +1,34 @@
+Feature,Decision,Reason
+CustomerID,Remove,Identifier
+Count,Remove,Constant Column
+Country,Remove,Single Unique Value
+State,Remove,Single Unique Value
+City,Keep,Useful Feature
+Zip Code,Keep,Useful Feature
+Lat Long,Remove,Duplicate of Latitude & Longitude
+Latitude,Keep,Useful Numerical Feature
+Longitude,Keep,Useful Numerical Feature
+Gender,Keep,Useful Predictor
+Senior Citizen,Keep,Useful Predictor
+Partner,Keep,Useful Predictor
+Dependents,Keep,Useful Predictor
+Tenure Months,Keep,Useful Predictor
+Phone Service,Keep,Useful Predictor
+Multiple Lines,Keep,Useful Predictor
+Internet Service,Keep,Useful Predictor
+Online Security,Keep,Useful Predictor
+Online Backup,Keep,Useful Predictor
+Device Protection,Keep,Useful Predictor
+Tech Support,Keep,Useful Predictor
+Streaming TV,Keep,Useful Predictor
+Streaming Movies,Keep,Useful Predictor
+Contract,Keep,Strong Predictor
+Paperless Billing,Keep,Useful Predictor
+Payment Method,Keep,Useful Predictor
+Monthly Charges,Keep,Useful Predictor
+Total Charges,Keep,Useful Predictor
+Churn Label,Target,Target Variable
+Churn Value,Remove,Duplicate Target
+Churn Score,Remove,Data Leakage
+CLTV,Remove,Potential Data Leakage
+Churn Reason,Remove,Data Leakage

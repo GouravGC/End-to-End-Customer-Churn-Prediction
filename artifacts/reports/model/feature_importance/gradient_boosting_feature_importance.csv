@@ -1,0 +1,49 @@
+Feature,Importance
+cat__Contract_Month-to-month,0.34947382628100254
+num__Tenure Months,0.12419351863250941
+num__Total Charges,0.07066402944021526
+cat__Internet Service_Fiber optic,0.06915691811435654
+num__Monthly Charges,0.061570628331946806
+cat__Online Security_No,0.05917849659596296
+cat__Dependents_Yes,0.05481835546309837
+cat__Tech Support_No,0.04170416068809538
+cat__Dependents_No,0.03732565858896203
+cat__Payment Method_Electronic check,0.03661899292795034
+num__Latitude,0.023308520059858645
+num__Longitude,0.016337998762234844
+cat__Multiple Lines_No,0.008385054061740846
+cat__Online Backup_No,0.007138172777689349
+cat__Streaming Movies_Yes,0.005950408930093653
+cat__Contract_Two year,0.005789572473916071
+cat__Paperless Billing_Yes,0.005395910528158785
+cat__Streaming TV_Yes,0.0031973716202901583
+cat__Partner_No,0.003081610571565825
+cat__Gender_Male,0.0030329964637414823
+cat__Paperless Billing_No,0.0024465915665593894
+cat__Partner_Yes,0.0022325929972566777
+cat__Senior Citizen_Yes,0.0019446673511878576
+cat__Online Backup_Yes,0.001478270298966865
+cat__Gender_Female,0.0011436485431333486
+cat__Contract_One year,0.00104495923070936
+cat__Senior Citizen_No,0.0008583499749063974
+cat__Internet Service_DSL,0.0005389429538106351
+cat__Tech Support_Yes,0.00046803889936061863
+cat__Multiple Lines_No phone service,0.00029625214930832823
+cat__Device Protection_Yes,0.00029442829196466144
+cat__Phone Service_No,0.0002580975100949652
+cat__Device Protection_No,0.00023488630733868642
+cat__Payment Method_Credit card (automatic),0.00019208080995360003
+cat__Phone Service_Yes,0.00012725075442683126
+cat__Payment Method_Bank transfer (automatic),0.00011874104763246863
+cat__Multiple Lines_Yes,0.0
+cat__Internet Service_No,0.0
+cat__Online Security_No internet service,0.0
+cat__Online Security_Yes,0.0
+cat__Tech Support_No internet service,0.0
+cat__Device Protection_No internet service,0.0
+cat__Online Backup_No internet service,0.0
+cat__Streaming TV_No internet service,0.0
+cat__Streaming Movies_No,0.0
+cat__Streaming Movies_No internet service,0.0
+cat__Streaming TV_No,0.0
+cat__Payment Method_Mailed check,0.0

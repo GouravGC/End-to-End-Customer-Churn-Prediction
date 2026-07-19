@@ -1,0 +1,49 @@
+Feature,Importance
+cat__Contract_Month-to-month,0.1694842758168835
+num__Total Charges,0.14851941575178346
+num__Longitude,0.11671791555179059
+num__Monthly Charges,0.1110436153953278
+num__Latitude,0.10640027978834736
+num__Tenure Months,0.07146737658143022
+cat__Internet Service_Fiber optic,0.0503536679026839
+cat__Dependents_No,0.02019219945671086
+cat__Payment Method_Electronic check,0.013327293581157631
+cat__Dependents_Yes,0.013193917053339815
+cat__Tech Support_No,0.013175304817918055
+cat__Online Security_No,0.011874324171102476
+cat__Senior Citizen_No,0.01162654478590058
+cat__Partner_No,0.010335466426679856
+cat__Gender_Female,0.0102731647556555
+cat__Gender_Male,0.010224495489786408
+cat__Paperless Billing_No,0.009928880763687883
+cat__Paperless Billing_Yes,0.009902684901729724
+cat__Payment Method_Credit card (automatic),0.00720630421666628
+cat__Partner_Yes,0.007134942556068494
+cat__Payment Method_Mailed check,0.006922845672467378
+cat__Online Backup_Yes,0.006372137594777943
+cat__Payment Method_Bank transfer (automatic),0.0061045932344482925
+cat__Tech Support_Yes,0.005796593212197286
+cat__Multiple Lines_Yes,0.005488446842122495
+cat__Device Protection_No,0.004891532763961191
+cat__Streaming Movies_No,0.004764559082152116
+cat__Online Security_Yes,0.00435826526325931
+cat__Multiple Lines_No,0.004269859471573609
+cat__Phone Service_Yes,0.004250843205378126
+cat__Streaming TV_No,0.004133158654272553
+cat__Senior Citizen_Yes,0.003981112185909592
+cat__Online Backup_No,0.003926135987338967
+cat__Streaming TV_Yes,0.003894295118443567
+cat__Streaming Movies_Yes,0.003835339520458399
+cat__Device Protection_Yes,0.0026787435248162537
+cat__Contract_Two year,0.0014939553659346944
+cat__Internet Service_DSL,0.0004555135358377805
+cat__Phone Service_No,0.0
+cat__Multiple Lines_No phone service,0.0
+cat__Tech Support_No internet service,0.0
+cat__Device Protection_No internet service,0.0
+cat__Online Backup_No internet service,0.0
+cat__Online Security_No internet service,0.0
+cat__Internet Service_No,0.0
+cat__Streaming TV_No internet service,0.0
+cat__Streaming Movies_No internet service,0.0
+cat__Contract_One year,0.0

@@ -1,0 +1,49 @@
+Feature,Importance
+num__Tenure Months,0.09163697746722839
+num__Total Charges,0.08445054396388466
+num__Latitude,0.06831760389798594
+num__Longitude,0.06781932033144458
+num__Monthly Charges,0.06737302894220162
+cat__Contract_Month-to-month,0.054402391820931595
+cat__Online Security_No,0.0396727829583749
+cat__Payment Method_Electronic check,0.03023437064002183
+cat__Internet Service_Fiber optic,0.02630294747946539
+cat__Tech Support_No,0.02321015199163915
+cat__Dependents_Yes,0.023197216218618415
+cat__Dependents_No,0.02294485573388902
+cat__Contract_Two year,0.020185128442940018
+cat__Online Backup_No,0.019189473766750384
+cat__Gender_Male,0.019021475824542198
+cat__Gender_Female,0.018103218416709695
+cat__Partner_No,0.01644352076748034
+cat__Partner_Yes,0.016395889506701348
+cat__Paperless Billing_No,0.01563272797929528
+cat__Device Protection_No,0.015122813577981961
+cat__Paperless Billing_Yes,0.014887671040102066
+cat__Multiple Lines_No,0.01455445948827775
+cat__Multiple Lines_Yes,0.014141218806596946
+cat__Senior Citizen_No,0.013990651729184638
+cat__Payment Method_Credit card (automatic),0.013689096479935395
+cat__Senior Citizen_Yes,0.01368617941490555
+cat__Tech Support_Yes,0.013397405466101487
+cat__Online Backup_Yes,0.013042312601002333
+cat__Device Protection_Yes,0.01290374357216179
+cat__Payment Method_Bank transfer (automatic),0.01288864458711593
+cat__Contract_One year,0.01273289374265725
+cat__Streaming TV_No,0.012326882044093242
+cat__Streaming Movies_Yes,0.01228591052200939
+cat__Online Security_Yes,0.012215427008359156
+cat__Streaming Movies_No,0.012168463540315094
+cat__Streaming TV_Yes,0.012007250359965232
+cat__Internet Service_DSL,0.011742137843958991
+cat__Payment Method_Mailed check,0.011128801704243997
+cat__Internet Service_No,0.0033646645992685105
+cat__Phone Service_Yes,0.0032427870202794773
+cat__Multiple Lines_No phone service,0.0031944637583342646
+cat__Streaming TV_No internet service,0.0031169996721845923
+cat__Phone Service_No,0.0029759420183110546
+cat__Streaming Movies_No internet service,0.0028191459562028694
+cat__Online Backup_No internet service,0.0027545323162664176
+cat__Online Security_No internet service,0.0026338246043982262
+cat__Tech Support_No internet service,0.0014372009278678837
+cat__Device Protection_No internet service,0.0010148494478138279
