@@ -53,7 +53,7 @@ def get_feature_schema():
 
 st.title("Customer Churn Prediction")
 st.write(
-    "Enter customer attributes and the app will use the existing model artifacts to predict churn."
+    "Enter the customer's information below. The application uses the trained model artifacts to predict whether the customer is likely to churn."
 )
 
 pipeline = get_pipeline()
@@ -97,9 +97,17 @@ if submitted:
     try:
         input_df = pd.DataFrame([record])
         prediction = pipeline.predict(input_df)
-        st.success(f"Prediction: {prediction[0]}")
-        st.dataframe(input_df)
+
+        # Convert prediction to a user-friendly message
+        if prediction[0] in [1, "Yes", "Churn", True]:
+            st.error("⚠️ Prediction: Customer is likely to churn.")
+        else:
+            st.success("✅ Prediction: Customer is likely to stay.")
+
+        st.subheader("Input Summary")
+        st.dataframe(input_df, use_container_width=True)
+
     except Exception as exc:
         st.error(f"Prediction failed: {exc}")
 
-st.caption("Artifacts are loaded once through cached resources and are not regenerated here.")
+st.caption("Model artifacts are loaded from the existing artifacts directory. No retraining is performed during prediction.")
