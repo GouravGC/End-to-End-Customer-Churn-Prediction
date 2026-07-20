@@ -45,7 +45,7 @@ Customer-Churn-Prediction/
 │   └── exception.py
 │
 ├── app.py
-├── run_training.py
+├── main.py
 ├── setup.py
 ├── requirements.txt
 ├── README.md
@@ -115,7 +115,7 @@ pip install -e .
 To train the complete pipeline:
 
 ```bash
-python run_training.py
+python main.py
 ```
 
 ---
