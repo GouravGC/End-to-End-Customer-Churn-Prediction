@@ -21,7 +21,7 @@ The complete workflow:
 The application is deployed using Streamlit Cloud:
 
 🔗 **Customer Churn Prediction App:**  
-https://end-to-end-customer-churn-prediction-gc.streamlit.app/
+https://end-to-end-customer-churn-prediction-gc.streamlit.app/ (Live Demo Note: The Streamlit Community Cloud app may be asleep due to inactivity. If prompted, click “Yes, get this app back up!” and wait a few seconds for the app to load.)
 
 Users can enter customer details and receive a real-time prediction of whether the customer is likely to churn.
 
